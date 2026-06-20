@@ -77,19 +77,25 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "LUMÈRE Studio — Quiet Luxury Hair, Skin, Nails & Brows" },
+      {
+        name: "description",
+        content:
+          "LUMÈRE Studio is an upscale beauty atelier for hair, skin, brows and nails. Same-week appointments. Rated 4.9 by 600+ clients.",
+      },
+      { name: "author", content: "LUMÈRE Studio" },
+      { property: "og:title", content: "LUMÈRE Studio — Quiet Luxury Beauty Atelier" },
+      { property: "og:description", content: "Hair, skin, brows and nails by senior specialists. Book your appointment today." },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
+      { rel: "stylesheet", href: appCss },
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
         rel: "stylesheet",
-        href: appCss,
+        href: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap",
       },
     ],
   }),
